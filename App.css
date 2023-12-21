@@ -1,0 +1,75 @@
+.container {
+
+    /* background-image: url("../src//assets/img/Portada.png"); */
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    background-size: cover;
+
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+    transition: opacity 500ms;
+}
+
+/*Barra*/
+
+.barra {
+
+    width: 3rem;
+    border-radius: 50px;
+    margin-bottom: 1vw;
+    height: 0.5rem;
+    position: absolute;
+    background-color: rgb(176, 173, 173);
+    transition: all 0.5s ease;
+
+}
+
+.barra:nth-child(1) {
+    top: 10px
+}
+
+.barra:nth-child(2) {
+    top: 41px;
+}
+
+
+.izq {
+    transform-origin: top right;
+    transform: rotateZ(-45deg);
+
+}
+
+.der {
+
+    transform-origin: bottom right;
+    transform: rotatez(45deg);
+
+}
+
+
+
+@media (max-width: 768px) {
+    .menuVisible {
+        transform: translateX(0vw);
+    }
+}

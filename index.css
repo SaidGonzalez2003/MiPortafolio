@@ -1,0 +1,46 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body, html {
+  /*  overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #0F151B;*/
+  font-family: 'Poppins', sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(24deg, rgba(2, 0, 36, 1) 0%, rgba(17, 4, 38, 1) 28%, rgba(29, 5, 69, 1) 65%, rgba(15, 5, 42, 1) 87%, rgba(14, 5, 40, 1) 100%);
+}
+
+img {
+  user-select: none;
+}
+
+/* CSS para bloquear el scroll cuando el popup está abierto */
+.popup-open {
+  overflow: hidden;
+}
+
+
+.menuVisible {
+
+  transform: translateX(0vw);
+
+}
+
+.animacion {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* Otros estilos para el texto */
+}
+
+.animacion.visible {
+  opacity: 1;
+}
+  
